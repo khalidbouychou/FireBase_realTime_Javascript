@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Bright Coding Js</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <style>
+      
+      /* *{
+
+        /* background-image: url("bg.png"); */
+         
+    
+  
+   
+       body{
+
+        max-width: 40%;
+        min-width: 200px;
+        /* background-color: #111111; */
+        margin: auto;
+        
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("bg.png"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: auto;
+        width: auto;
+       }
+       ul{
+           background-color: red;
+       }
+   </style>
+</head>
+<body class="  mt-5 ">
+    
+     <div class="container my-5 text-center ">
+         <div class="row">
+             
+            <div class="col-8 mx-5 ">
+
+                <h1 class="my-4 text-center"><span  >Bright Coding Projet</span></h1>
+
+         <form >
+             <div class="input-group">
+
+                 <input required   placeholder="Add New Course ..." type="text" class="form-control text-center input-group-text" id="course"> 
+               
+                 <div class="input-group-append ">
+
+                    <input type="submit"   class="btn btn-info"/> 
+                    
+
+                 </div>
+
+             </div>
+         </form>
+
+         <ul class="list-group  mt-5">
+           
+         </ul>
+            </div>
+         </div>
+         
+     </div>
+
+
+
+   
+
+
+    <!-----------------------------Connexion FireBase To my Project ----------------------------------------------->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCaRO_1GCMPPfGzg-TwK7ELcy0tYE7oG3I",
+    authDomain: "courses-d8648.firebaseapp.com",
+    databaseURL: "https://courses-d8648.firebaseio.com",
+    projectId: "courses-d8648",
+    storageBucket: "courses-d8648.appspot.com",
+    messagingSenderId: "292153431269",
+    appId: "1:292153431269:web:7c424f59319723d081700c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  const data = firebase.firestore();
+
+</script>
+<script src="ScriptProjet.js"> </script>
+</body>
+</html>
